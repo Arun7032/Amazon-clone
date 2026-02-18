@@ -1,0 +1,106 @@
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Books{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/books.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<!-- ================= LOCAL BOOK NAV ================= -->
+
+<div class="local-nav">
+    <div><strong>Books</strong></div>
+    <div>Advanced Search</div>
+    <div>New Releases & Pre-orders</div>
+    <div>Best Sellers</div>
+    <div>Browse Genres</div>
+    <div>Children's & Young Adult</div>
+    <div>Textbooks</div>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Category</h3>
+        <ul>
+            <li><strong>Books</strong></li>
+            <li>Action & Adventure</li>
+            <li>Arts, Film & Photography</li>
+            <li>Biographies</li>
+            <li>Business & Economics</li>
+            <li>Children's Books</li>
+            <li>Comics & Mangas</li>
+            <li>Engineering</li>
+            <li>Exam Preparation</li>
+            <li>Literature & Fiction</li>
+            <li>History</li>
+            <li>Law</li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- Circle Categories -->
+        <div class="circle-row">
+
+            <div class="circle-item">
+                <img src="#">
+                <p>New Releases</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Fiction</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Non-fiction</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Children Books</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>School Books</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Exam Prep</p>
+            </div>
+
+        </div>
+
+        <!-- Banner Section -->
+        <div class="banner">
+
+            <div class="banner-text">
+                <h1>Women's Prize<br>Non-Fiction Reads<br>2026 Longlist</h1>
+                <button>Explore now</button>
+            </div>
+
+            <img src="#">
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+

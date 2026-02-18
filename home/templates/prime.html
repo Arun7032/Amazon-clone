@@ -1,0 +1,92 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Prime{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/prime.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="prime-wrapper">
+
+    <!-- LEFT HERO -->
+    <div class="prime-left">
+        <h2>amazon prime</h2>
+        <p>One membership, many benefits</p>
+        <button class="join-btn">Become a member today</button>
+    </div>
+
+    <!-- MEMBERSHIP TABLE -->
+    <div class="prime-table">
+
+        <div class="plan-header">
+            <div></div>
+            <div class="plan-box highlight">
+                Prime Shopping Edition
+                <div class="price">₹399 / year</div>
+            </div>
+            <div class="plan-box">
+                Prime Lite
+                <div class="price">₹799 / year</div>
+            </div>
+            <div class="plan-box">
+                Prime
+                <div class="price">₹299 / month</div>
+            </div>
+        </div>
+
+        <!-- FEATURES -->
+
+        <div class="feature-row">
+            <div class="feature-name">Prime Delivery</div>
+            <div class="check">✓</div>
+            <div class="check">✓</div>
+            <div class="check">✓</div>
+        </div>
+
+        <div class="feature-row">
+            <div>Prime Video</div>
+            <div class="cross">✕</div>
+            <div class="check">✓</div>
+            <div class="check">✓</div>
+        </div>
+
+        <div class="feature-row">
+            <div>Prime Music</div>
+            <div class="cross">✕</div>
+            <div class="cross">✕</div>
+            <div class="check">✓</div>
+        </div>
+
+        <div class="feature-row">
+            <div>Prime Shopping Offers</div>
+            <div class="check">✓</div>
+            <div class="check">✓</div>
+            <div class="check">✓</div>
+        </div>
+
+        <div class="feature-row">
+            <div>Prime Reading</div>
+            <div class="cross">✕</div>
+            <div class="cross">✕</div>
+            <div class="check">✓</div>
+        </div>
+
+        <div class="feature-row">
+            <div>Prime Gaming</div>
+            <div class="cross">✕</div>
+            <div class="cross">✕</div>
+            <div class="check">✓</div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

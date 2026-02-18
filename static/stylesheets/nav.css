@@ -1,0 +1,157 @@
+
+/* ================= TOP NAVBAR ================= */
+
+.navbar{
+    background:#131921;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:10px 20px;
+    gap:15px;
+    z-index: 1000;
+    position: relative;
+}
+
+.nav-logo img{
+    width:100px;
+}
+
+.nav-location{
+    font-size:12px;
+}
+
+.nav-location span{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.nav-search{
+    flex:1;
+    display:flex;
+    height:40px;
+}
+
+.nav-search select{
+    width:60px;
+    border:none;
+}
+
+.nav-search input{
+    flex:1;
+    border:none;
+    padding:8px;
+}
+
+.nav-search button{
+    width:45px;
+    border:none;
+    background:#febd69;
+    cursor:pointer;
+}
+
+.nav-right{
+    display:flex;
+    gap:20px;
+    font-size:13px;
+}
+
+.nav-right span{
+    font-weight:bold;
+}
+
+/* ================= SUB NAVBAR ================= */
+
+.sub-navbar{
+    background:#232f3e;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:4px 15px;
+    gap: 2px;
+    font-size:14px;
+    font-family:  Arial, sans-serif;
+    font-weight: 200;
+    position:relative;
+    z-index: 1000;
+}
+
+.menu-item{
+    position:relative;
+    cursor:pointer;
+    padding:6px 8px;
+    border:1px solid transparent;
+}
+.menu-item>a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item:hover{
+    border:1px solid white;
+    border-radius:2px;
+}
+
+/* DROPDOWN BASE */
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:white;
+    color:black;
+    min-width:220px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    padding:15px;
+    z-index: 1000;
+}
+
+.dropdown-menu a{
+    display:block;
+    text-decoration:none;
+    color:black;
+    padding:6px 0;
+    font-size:14px;
+}
+
+.dropdown-menu a:hover{
+    color:#e47911;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+/* MEGA MENU (ALL) */
+.mega-menu{
+    width:600px;
+    display:none;
+    gap:40px;
+}
+
+.dropdown:hover .mega-menu{
+    display:flex;
+}
+
+.mega-column h4{
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+.mega-column a{
+    display:block;
+    margin-bottom:6px;
+}
+
+/* PRIME BOX */
+.prime-box{
+    width:250px;
+}
+
+.prime-box button{
+    background:#febd69;
+    border:none;
+    padding:8px 12px;
+    margin-top:10px;
+    cursor:pointer;
+}

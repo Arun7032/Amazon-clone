@@ -1,0 +1,92 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Mobiles{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/mobiles.css' %}">
+{% endblock %}
+    
+{% block content %}
+
+<!-- ================= ELECTRONICS NAV ================= -->
+
+<div class="electronics-nav">
+    <div><strong>Electronics</strong></div>
+    <div>Mobiles & Accessories</div>
+    <div>Laptops & Accessories</div>
+    <div>TV & Home Entertainment</div>
+    <div>Audio</div>
+    <div>Cameras</div>
+    <div>Computer Peripherals</div>
+    <div>Smart Technology</div>
+    <div>Musical Instruments</div>
+    <div>Office & Stationery</div>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h3>Category</h3>
+        <ul>
+            <li><strong>Electronics</strong></li>
+            <li><strong>Mobiles & Accessories</strong></li>
+            <li>Mobile Accessories</li>
+            <li>Mobile Broadband Devices</li>
+            <li>SIM Cards</li>
+            <li>Smartphones & Basic Mobiles</li>
+            <li>Smartwatches</li>
+        </ul>
+
+        <h3>Amazon Prime</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Prime Eligible</label>
+        </div>
+
+        <h3>Delivery Day</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Get It Today</label>
+            <label><input type="checkbox"> Get It by Tomorrow</label>
+        </div>
+
+        <h3>Brands</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> amazon basics</label>
+            <label><input type="checkbox"> Samsung</label>
+            <label><input type="checkbox"> Redmi</label>
+        </div>
+
+        <h3>Customer Reviews</h3>
+        <div>★★★★★ & Up</div>
+
+        <h3>Item Condition</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> New</label>
+        </div>
+
+    </div>
+
+    <!-- BANNER SECTION -->
+    <div class="banner-section">
+
+        <div class="top-accessories">
+            <div class="accessory-card">Accessories</div>
+            <div class="accessory-card">Redmi Note 15 Pro+ 5G</div>
+        </div>
+
+        <div class="banner">
+            MEGA PHONE MANIA<br>
+            20 - 22 February
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+

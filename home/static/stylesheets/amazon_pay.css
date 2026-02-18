@@ -1,0 +1,126 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+/* ================= LOCAL HEADER ================= */
+
+.pay-header{
+    background:#ffffff;
+    padding:20px 40px;
+    font-size:24px;
+    font-weight:bold;
+    border-bottom:1px solid #ddd;
+}
+
+/* ================= MAIN LAYOUT ================= */
+
+.main-container{
+    display:flex;
+    gap:30px;
+    padding:30px 40px;
+}
+
+/* ================= LEFT SIDEBAR ================= */
+
+.balance-card{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+.balance-card h3{
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.balance{
+    color:green;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.balance-card ul{
+    list-style:none;
+}
+
+.balance-card li{
+    margin-bottom:12px;
+    cursor:pointer;
+    color:#007185;
+}
+
+.balance-card li:hover{
+    text-decoration:underline;
+}
+
+/* ================= CONTENT SECTIONS ================= */
+
+.content{
+    flex:1;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    margin-bottom:25px;
+    border:1px solid #ddd;
+}
+
+.section h2{
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.icon-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.icon-item{
+    cursor:pointer;
+}
+
+.icon-circle{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#f0f0f0;
+    margin:0 auto 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.icon-item p{
+    font-size:14px;
+}
+
+.icon-item:hover{
+    color:#c45500;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+    .main-container{
+        flex-direction:column;
+    }
+
+    .balance-card{
+        width:100%;
+    }
+}

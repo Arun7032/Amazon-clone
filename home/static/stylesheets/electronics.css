@@ -1,0 +1,130 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+/* ================= LOCAL ELECTRONICS NAV ================= */
+
+.electronics-nav{
+    background:#ffffff;
+    padding:15px 40px;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    gap:30px;
+    font-size:14px;
+}
+
+.electronics-nav div{
+    cursor:pointer;
+}
+
+.electronics-nav div:hover{
+    text-decoration:underline;
+}
+
+/* ================= MAIN LAYOUT ================= */
+
+.main-container{
+    display:flex;
+    padding:20px 40px;
+    gap:30px;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    width:260px;
+    background:white;
+    padding:20px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    font-size:14px;
+}
+
+.sidebar h3{
+    margin-bottom:15px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:8px;
+    cursor:pointer;
+}
+
+.sidebar li:hover{
+    color:#c45500;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.content{
+    flex:1;
+}
+
+/* ================= BANNER ================= */
+
+.banner{
+    position:relative;
+    background:linear-gradient(90deg,#1a5fd0,#58a3f2);
+    color:white;
+    height:250px;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    padding:40px;
+    margin-bottom:20px;
+}
+
+.banner h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+.shop-btn{
+    margin-top:15px;
+    background:white;
+    color:#111;
+    padding:8px 16px;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+    display:inline-block;
+}
+
+/* ================= PROMO SECTION ================= */
+
+.promo{
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    text-align:center;
+    font-size:26px;
+    font-weight:bold;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+    .main-container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+}

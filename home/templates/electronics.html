@@ -1,0 +1,75 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Electronics{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/electronics.css' %}">
+{% endblock %}
+    
+{% block content %}
+
+<!-- ================= LOCAL NAV ================= -->
+
+<div class="electronics-nav">
+    <div><strong>Electronics</strong></div>
+    <div>Mobiles & Accessories</div>
+    <div>Laptops & Accessories</div>
+    <div>TV & Home Entertainment</div>
+    <div>Audio</div>
+    <div>Cameras</div>
+    <div>Computer Peripherals</div>
+    <div>Smart Technology</div>
+    <div>Musical Instruments</div>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Category</h3>
+        <ul>
+            <li><strong>Electronics</strong></li>
+            <li>Accessories</li>
+            <li>Cameras & Photography</li>
+            <li>Car & Vehicle Electronics</li>
+            <li>Computers & Accessories</li>
+            <li>GPS & Accessories</li>
+            <li>Home Audio</li>
+            <li>Mobiles & Accessories</li>
+            <li>Tablets</li>
+            <li>Wearable Technology</li>
+            <li>Headphones & Earbuds</li>
+            <li>Power Accessories</li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- MAIN BANNER -->
+        <div class="banner">
+            <div>
+                <h2>Fast, powerful, and more secure.</h2>
+                <p>Starting from ₹49,990</p>
+                <div class="shop-btn">Shop now</div>
+            </div>
+        </div>
+
+        <!-- PROMO SECTION -->
+        <div class="promo">
+            7.5% Instant Discount* on Credit Card EMI Transactions
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+

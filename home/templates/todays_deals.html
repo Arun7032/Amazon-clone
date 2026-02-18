@@ -1,0 +1,105 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Todays Deals{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/todays_deals.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- ================= DEALS NAV ================= -->
+
+<div class="deals-top-nav">
+    <div><strong>Today's Deals</strong></div>
+    <div>All Deals</div>
+    <div>Watched Deals</div>
+    <div>Subscribe & Save</div>
+    <div>Coupons</div>
+    <div>Clearance</div>
+    <div>Refurbished & Open Box</div>
+</div>
+
+<!-- ================= FILTER CHIPS ================= -->
+
+<div class="filter-chips">
+    <button>Trending</button>
+    <button>Coupons</button>
+    <button>Lightning Deals</button>
+    <button>Mobiles</button>
+    <button>Electronics</button>
+    <button>Mobiles & computer accessories</button>
+    <button>Large Appliances</button>
+    <button>Smart TVs</button>
+    <button>Home & Kitchen</button>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h3>Department</h3>
+        <label><input type="radio" name="dept"> All</label>
+        <label><input type="radio" name="dept"> Amazon Devices</label>
+        <label><input type="radio" name="dept"> Baby</label>
+        <label><input type="radio" name="dept"> Beauty</label>
+
+        <h3>Brands</h3>
+        <label><input type="checkbox"> Redmi</label>
+        <label><input type="checkbox"> Samsung</label>
+        <label><input type="checkbox"> LG</label>
+
+        <h3>Customer Reviews</h3>
+        <div>★★★★★ & Up</div>
+
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products">
+
+        <div class="product-card">
+            <img src="#">
+            <div class="discount-badge">5% off</div>
+            <div class="product-title">REDMI Note 15 Pro+ 5G</div>
+            <div class="price">₹37,999</div>
+            <div class="mrp">M.R.P: ₹39,999</div>
+            <button class="add-btn">+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="#">
+            <div class="discount-badge">14% off</div>
+            <div class="product-title">iQOO Z10x 5G</div>
+            <div class="price">₹14,998</div>
+            <div class="mrp">M.R.P: ₹17,499</div>
+            <button class="add-btn">+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="#">
+            <div class="discount-badge">39% off</div>
+            <div class="product-title">Samsung Galaxy A55 5G</div>
+            <div class="price">₹27,999</div>
+            <div class="mrp">M.R.P: ₹45,999</div>
+            <button class="add-btn">+</button>
+        </div>
+
+        <div class="product-card">
+            <img src="#">
+            <div class="discount-badge">40% off</div>
+            <div class="product-title">LG 55" 4K Smart TV</div>
+            <div class="price">₹39,990</div>
+            <div class="mrp">M.R.P: ₹66,290</div>
+            <button class="add-btn">+</button>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

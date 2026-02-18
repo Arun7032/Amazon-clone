@@ -1,0 +1,91 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Fashion{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/fashion.css' %}">
+{% endblock %}
+    
+{% block content %}
+
+<!-- ================= HEADER ================= -->
+
+<div class="page-header">
+    Amazon Fashion
+</div>
+
+<!-- ================= MENU ================= -->
+
+<div class="fashion-menu">
+    <div>Women</div>
+    <div>Men</div>
+    <div>Kids</div>
+    <div>Bags & Luggage</div>
+    <div>Sportswear</div>
+    <div>Sales & Deals</div>
+</div>
+
+<!-- ================= CATEGORY ICONS ================= -->
+
+<div class="category-scroll">
+
+    <div class="category-item">
+        <img src="#">
+        <p>Men's clothing</p>
+    </div>
+
+    <div class="category-item">
+        <img src="#">
+        <p>Women's clothing</p>
+    </div>
+
+    <div class="category-item">
+        <img src="#">
+        <p>Kids' fashion</p>
+    </div>
+
+    <div class="category-item">
+        <img src="#">
+        <p>Footwear</p>
+    </div>
+
+    <div class="category-item">
+        <img src="#">
+        <p>Luggage & bags</p>
+    </div>
+
+    <div class="category-item">
+        <img src="#">
+        <p>Jewellery</p>
+    </div>
+
+    <div class="category-item">
+        <img src="#">
+        <p>Watches</p>
+    </div>
+
+    <div class="category-item">
+        <img src="#">
+        <p>Beauty</p>
+    </div>
+
+</div>
+
+<!-- ================= CASHBACK BANNER ================= -->
+
+<div class="cashback-banner">
+    Get up to 20% cashback*
+</div>
+
+<!-- ================= DEALS SECTION ================= -->
+
+<div class="deals-section">
+    <h2>Deals</h2>
+    <p>Explore the latest fashion offers and seasonal discounts.</p>
+</div>
+
+{% endblock %}
+

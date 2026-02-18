@@ -1,0 +1,123 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Home & kitchen{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/home&kitchen.css' %}">
+{% endblock %}
+    
+{% block content %}
+
+<!-- ================= LOCAL NAV ================= -->
+
+<div class="home-nav">
+    <div><strong>Amazon Home</strong></div>
+    <div>Kitchen & Home Appliances</div>
+    <div>Large Appliances</div>
+    <div>Kitchen & Dining</div>
+    <div>Furniture</div>
+    <div>Home Furnishing</div>
+    <div>Home Decor</div>
+    <div>Garden & Outdoor</div>
+</div>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<div class="page-title">
+    Buy products across Home, Kitchen, Garden, Furniture and more
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h3>Shop by Room</h3>
+        <ul>
+            <li>Living Room</li>
+            <li>Bedroom</li>
+            <li>Kitchen</li>
+            <li>Garage</li>
+            <li>Shop All</li>
+        </ul>
+
+        <h3>Featured Categories</h3>
+        <ul>
+            <li>Kitchen & Home Appliances</li>
+            <li>Kitchen & Dining</li>
+            <li>Home Decor</li>
+            <li>Furniture</li>
+            <li>Garden & Outdoors</li>
+            <li>Lighting</li>
+        </ul>
+
+        <h3>Cookware & Dining</h3>
+        <ul>
+            <li>Cookware</li>
+            <li>Kitchen Storage</li>
+            <li>Dinner Sets</li>
+            <li>Glassware</li>
+        </ul>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- CATEGORY ICONS -->
+        <div class="category-scroll">
+
+            <div class="category-item">
+                <img src="#">
+                <p>Bedding & decor</p>
+            </div>
+
+            <div class="category-item">
+                <img src="#">
+                <p>Appliances</p>
+            </div>
+
+            <div class="category-item">
+                <img src="#">
+                <p>Fitness</p>
+            </div>
+
+            <div class="category-item">
+                <img src="#">
+                <p>Kitchenware</p>
+            </div>
+
+            <div class="category-item">
+                <img src="#">
+                <p>Home Improvement</p>
+            </div>
+
+            <div class="category-item">
+                <img src="#">
+                <p>Toys</p>
+            </div>
+
+            <div class="category-item">
+                <img src="#">
+                <p>Tools</p>
+            </div>
+
+        </div>
+
+        <!-- PRIME PROMO -->
+        <div class="prime-banner">
+            Prime Shopping Days – Up to 80% off
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
+

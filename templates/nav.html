@@ -1,0 +1,109 @@
+
+<!-- ================= TOP NAVBAR ================= -->
+
+<div class="navbar">
+    
+    <div class="nav-logo">
+        <a href="{% url 'amazon_home' %}"><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" href="{% url 'fresh' %}"></a>
+    </div>
+
+    <div class="nav-location">
+        Delivering to Hyderabad 500000<br>
+        <span>Update location</span>
+    </div>
+
+    <div class="nav-search">
+        <select>
+            <option>All</option>
+            <option>Mobiles</option>
+            <option>Electronics</option>
+        </select>
+        <input type="text" placeholder="Search Amazon.in">
+        <button>🔍</button>
+    </div>
+
+    <div class="nav-right">
+        <div>EN 🌐</div>
+        <div>
+            Hello, sign in<br>
+            <span>Account & Lists</span>
+        </div>
+        <div>
+            Returns<br>
+            <span>& Orders</span>
+        </div>
+        <div>🛒 Cart (0)</div>
+    </div>
+
+</div>
+
+<!-- ================= SUB NAVBAR ================= -->
+
+<div class="sub-navbar">
+
+    <!-- ALL -->
+    <div class="menu-item dropdown">
+        ☰ <a href="{% url 'amazon_home' %}"><span>All</span></a>
+        <div class="dropdown-menu mega-menu">
+            <div class="mega-column">
+                <h4>Shop by Category</h4>
+                <a href="#">Mobiles</a>
+                <a href="#">Electronics</a>
+                <a href="#">Fashion</a>
+                <a href="#">Home & Kitchen</a>
+                <a href="#">Books</a>
+            </div>
+            <div class="mega-column">
+                <h4>Programs & Features</h4>
+                <a href="#">Today's Deals</a>
+                <a href="#">Prime Video</a>
+                <a href="#">Amazon Pay</a>
+                <a href="#">Gift Cards</a>
+            </div>
+            <div class="mega-column">
+                <h4>Help & Settings</h4>
+                <a href="#">Your Account</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FRESH -->
+    <div class="menu-item dropdown">
+        <a href="{% url 'fresh' %}">Fresh ▼</a>
+        <div class="dropdown-menu">
+            <a href="#">Fruits & Vegetables</a>
+            <a href="#">Dairy & Bakery</a>
+            <a href="#">Snacks</a>
+            <a href="#">Beverages</a>
+        </div>
+    </div>
+
+    <div class="menu-item">MX Player</div>
+    <div class="menu-item"><a href="{% url 'seller' %}">Sell</a></div>
+    <div class="menu-item"><a href="{% url 'best_seller' %}">Bestsellers</a></div>
+    <div class="menu-item"><a href="{% url 'mobiles' %}">Mobiles</a></div>
+    <div class="menu-item"><a href="{% url 'todays_deals' %}">Today's Deals</a></div>
+    <div class="menu-item"><a href="{% url 'customer_service' %}">Customer Service</a></div>
+    <div class="menu-item"><a href="{% url 'new_releases' %}">New Releases</a></div>
+
+    <!-- PRIME -->
+    <div class="menu-item dropdown">
+        <a href="{% url 'prime' %}">Prime ▼</a>
+        <div class="dropdown-menu prime-box">
+            <h4>Enjoy Prime Benefits</h4>
+            <p>Free Delivery, Prime Video, Music & more.</p>
+            <button>Try Prime</button>
+        </div>
+    </div>
+
+    <div class="menu-item"><a href="{% url 'fashion' %}">Fashion</a></div>
+    <div class="menu-item"><a href="{% url 'amazon_pay' %}">Amazon Pay</a></div>
+    <div class="menu-item"><a href="{% url 'electronics' %}">Electronics</a></div>
+    <div class="menu-item"><a href="{% url 'home&kitchen' %}">Home & Kitchen</a></div>
+    <div class="menu-item"><a href="{% url 'computers' %}">Computers</a></div>
+    <div class="menu-item"><a href="{% url 'books' %}">Books</a></div>
+    <div class="menu-item"><a href="{% url 'gift_cards' %}">Gift Cards</a></div>
+
+</div>

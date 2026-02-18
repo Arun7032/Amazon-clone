@@ -1,0 +1,96 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Computers{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/computers.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- ================= LOCAL NAV ================= -->
+
+<div class="local-nav">
+    <div><strong>Electronics</strong></div>
+    <div>Mobiles & Accessories</div>
+    <div>Laptops & Accessories</div>
+    <div>TV & Home Entertainment</div>
+    <div>Audio</div>
+    <div>Cameras</div>
+    <div>Computer Peripherals</div>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Category</h3>
+        <ul>
+            <li><strong>Computers & Accessories</strong></li>
+            <li>Accessories & Peripherals</li>
+            <li>Components</li>
+            <li>Desktops</li>
+            <li>External Devices & Storage</li>
+            <li>Laptops</li>
+            <li>Monitors</li>
+            <li>Networking Devices</li>
+            <li>Printers & Accessories</li>
+            <li>Tablets</li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <div class="section-head">
+            <div>PC Accessories</div>
+            <div>Gaming Accessories</div>
+        </div>
+
+        <h2 style="margin-bottom:20px;">Shop by category</h2>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <img src="#">
+                <h4>Gaming Accessories</h4>
+            </div>
+
+            <div class="category-card">
+                <img src="#">
+                <h4>Keyboards</h4>
+            </div>
+
+            <div class="category-card">
+                <img src="#">
+                <h4>Laptop Bags</h4>
+            </div>
+
+            <div class="category-card">
+                <img src="#">
+                <h4>Tablet Accessories</h4>
+            </div>
+
+            <div class="category-card">
+                <img src="#">
+                <h4>USB & Cables</h4>
+            </div>
+
+            <div class="category-card">
+                <img src="#">
+                <h4>Monitors</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

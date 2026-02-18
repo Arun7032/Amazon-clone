@@ -1,0 +1,99 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    color:#111;
+}
+
+/* ================= ALERT BOX ================= */
+
+.body{
+    padding:30px 80px;
+
+}
+
+.alert{
+    background:#fff8e1;
+    border:1px solid #f0c14b;
+    padding:15px 20px;
+    border-radius:8px;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.alert span{
+    color:#c45500;
+    font-weight:bold;
+    margin-right:8px;
+}
+
+/* ================= MAIN HEADING ================= */
+
+.main-heading{
+    margin-top:40px;
+    margin-bottom:30px;
+}
+
+.main-heading h1{
+    font-size:32px;
+    font-weight:500;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title{
+    margin:30px 0 20px 0;
+    font-size:22px;
+}
+
+/* ================= HELP CARDS ================= */
+
+.help-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:20px;
+}
+
+.help-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    gap:15px;
+    align-items:center;
+    border:1px solid #ddd;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+.help-card:hover{
+    box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+
+.help-icon{
+    font-size:28px;
+}
+
+.help-card h3{
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.help-card p{
+    font-size:13px;
+    color:#555;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+    body{
+        padding:20px;
+    }
+}

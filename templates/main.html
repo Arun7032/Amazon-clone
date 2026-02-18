@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Amazon.in Clone{% endblock %}</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'stylesheets/main.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/foot.css' %}">
+    
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+
+    {% include 'nav.html' %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% include 'foot.html' %}
+
+</body>
+</html>

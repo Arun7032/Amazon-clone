@@ -1,0 +1,104 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Best Seller{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/best_seller.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<!-- ================= INTERNAL TABS ================= -->
+
+<div class="top-tabs">
+    <div>Bestsellers</div>
+    <div>Hot New Releases</div>
+    <div>Movers and Shakers</div>
+    <div>Most Wished For</div>
+    <div>Most Gifted</div>
+</div>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<div class="page-title">
+    <h1>Amazon Bestsellers</h1>
+    <p>Our most popular products based on sales. Updated frequently.</p>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Any Department</h3>
+        <ul>
+            <li>Amazon Launchpad</li>
+            <li>Amazon Renewed</li>
+            <li>Apps & Games</li>
+            <li>Baby Products</li>
+            <li>Beauty</li>
+            <li>Books</li>
+            <li>Electronics</li>
+            <li>Home & Kitchen</li>
+            <li>Jewellery</li>
+            <li>Musical Instruments</li>
+            <li>Office Products</li>
+        </ul>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products-section">
+
+        <div class="section-header">
+            <h2>Bestsellers in Jewellery</h2>
+            <span>Page 1 of 5</span>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="rank-badge">#1</div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51rJFrlBC3L._AC_UL450_SR450,320_.jpg">
+                <div class="product-title">Astrotalk Dhan Yog Bracelet...</div>
+                <div class="rating">★★★★★ (1,150)</div>
+                <div class="price">₹695.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="rank-badge">#2</div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71R2QnSdv+L._AC_UL450_SR450,320_.jpg">
+                <div class="product-title">Shining Diva Fashion Necklace Set...</div>
+                <div class="rating">★★★★★ (1,321)</div>
+                <div class="price">₹298.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="rank-badge">#3</div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71YUwBnGlaL._AC_UL450_SR450,320_.jpg">
+                <div class="product-title">MEENAZ Bridal Ear Chain...</div>
+                <div class="rating">★★★★☆ (600)</div>
+                <div class="price">₹168.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="rank-badge">#4</div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71yRFpulYVL._AC_UL450_SR450,320_.jpg">
+                <div class="product-title">ONFLOW 12-Color Bangles Set...</div>
+                <div class="rating">★★★★☆ (101)</div>
+                <div class="price">₹299.00</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
+

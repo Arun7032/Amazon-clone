@@ -1,0 +1,86 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Seller{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/seller.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<!-- ================= SELLER NAV ================= -->
+
+<div class="seller-nav">
+    <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png">
+    <button class="start-btn">Start Selling</button>
+</div>
+
+<!-- ================= HERO ================= -->
+
+<div class="hero">
+
+    <div class="hero-text">
+        <h1>From home-grown to well-known <span>with Amazon.in</span></h1>
+        <p>Connect with millions of customers from 18,000+ pincodes</p>
+        <button class="start-btn">Start Selling</button>
+    </div>
+
+    <img src="#">
+
+</div>
+
+<!-- ================= FEE DROP ================= -->
+
+<div class="fee-section">
+    <h2>Fee drop highlights</h2>
+
+    <div class="fee-cards">
+        <div class="fee-card">
+            <h3>0%</h3>
+            <p>Referral fees on products under ₹300</p>
+        </div>
+
+        <div class="fee-card">
+            <h3>₹65</h3>
+            <p>National shipping rates now, from ₹77</p>
+        </div>
+
+        <div class="fee-card">
+            <h3>Up to 90%</h3>
+            <p>Savings in selling fees on the sale of second unit</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= CATEGORY IMPACT ================= -->
+
+<div class="category-section">
+    <h2>Category level impact</h2>
+
+    <div class="category-cards">
+
+        <div class="category-card">
+            <div>
+                <h3>Apparel</h3>
+                <p>See up to 16.5% reduction in referral fee for products ≤ Rs.300.</p>
+            </div>
+            <img src="#">
+        </div>
+
+        <div class="category-card">
+            <div>
+                <h3>Home</h3>
+                <p>See up to 15.5% reduction in referral fee for products ≤ Rs.300.</p>
+            </div>
+            <img src="#">
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+

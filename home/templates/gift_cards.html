@@ -1,0 +1,112 @@
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Gift cards{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/gift_cards.css' %}">
+{% endblock %}
+    
+{% block content %}
+
+<!-- ================= LOCAL GIFT NAV ================= -->
+
+<div class="local-nav">
+    <div><strong>Gift Cards</strong></div>
+    <div>Bestsellers</div>
+    <div>Birthday</div>
+    <div>Wedding & Engagement</div>
+    <div>By Occasion</div>
+    <div>By Brand</div>
+    <div>Corporate Gifting</div>
+</div>
+
+<!-- ================= MAIN CONTAINER ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Category</h3>
+        <ul>
+            <li><strong>Gift Cards</strong></li>
+            <li>Gift Cards & Vouchers</li>
+        </ul>
+
+        <h3>Delivery Type</h3>
+        <ul>
+            <li>eGift Cards</li>
+            <li>Physical Gift Cards</li>
+        </ul>
+
+        <h3>Deals & Discounts</h3>
+        <ul>
+            <li>All Discounts</li>
+            <li>Today's Deals</li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- Circle Categories -->
+        <div class="circle-row">
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Add a Gift Card</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Amazon Vouchers</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Amazon Pay Gift Cards</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Brand Gift Cards</p>
+            </div>
+
+            <div class="circle-item">
+                <img src="#">
+                <p>Corporate Gift Cards</p>
+            </div>
+
+        </div>
+
+        <!-- Popular Section -->
+        <div class="section-title">
+            Explore popular Amazon Pay Gift Cards
+        </div>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <img src="#">
+                <h3>Your Photo</h3>
+            </div>
+
+            <div class="card">
+                <img src="#">
+                <h3>Animated</h3>
+            </div>
+
+            <div class="card">
+                <img src="#">
+                <h3>Physical</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

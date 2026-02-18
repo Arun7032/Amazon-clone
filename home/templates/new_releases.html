@@ -1,0 +1,107 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}New_releases{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'stylesheets/new_releases.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- ================= INTERNAL NAV TABS ================= -->
+
+<div class="top-tabs">
+    <div>Bestsellers</div>
+    <div class="active-tab">Hot New Releases</div>
+    <div>Movers and Shakers</div>
+    <div>Most Wished For</div>
+    <div>Most Gifted</div>
+</div>
+
+<!-- ================= PAGE TITLE ================= -->
+
+<div class="page-title">
+    <h1>Amazon Hot New Releases</h1>
+    <p>Our bestselling new and future releases. Updated frequently.</p>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Any Department</h3>
+        <ul>
+            <li>Amazon Launchpad</li>
+            <li>Amazon Renewed</li>
+            <li>Baby Products</li>
+            <li>Beauty</li>
+            <li>Books</li>
+            <li>Computers & Accessories</li>
+            <li>Electronics</li>
+            <li>Garden & Outdoors</li>
+            <li>Health & Personal Care</li>
+            <li>Home & Kitchen</li>
+            <li>Home Improvement</li>
+            <li>Jewellery</li>
+            <li>Kindle Store</li>
+            <li>Movies & TV Shows</li>
+            <li>Music</li>
+            <li>Office Products</li>
+        </ul>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products-section">
+
+        <div class="section-header">
+            <h2>Hot New Releases in Garden & Outdoors</h2>
+            <span>Page 1 of 5</span>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="rank-badge">#1</div>
+                <img src="#">
+                <div class="product-title">Water Testing Kit for Drinking Water...</div>
+                <div class="rating">★★★★★ (5)</div>
+                <div class="price">₹149.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="rank-badge">#2</div>
+                <img src="#">
+                <div class="product-title">Mosquito Killer LED Lamp...</div>
+                <div class="rating">★★★★☆ (12)</div>
+                <div class="price">₹248.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="rank-badge">#3</div>
+                <img src="#">
+                <div class="product-title">Electric Mosquito Killer Lamp...</div>
+                <div class="rating">★★★★☆ (10)</div>
+                <div class="price">₹299.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="rank-badge">#4</div>
+                <img src="#">
+                <div class="product-title">Hand Pressure Garden Sprayer...</div>
+                <div class="rating">★★★★☆ (20)</div>
+                <div class="price">₹159.00</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
